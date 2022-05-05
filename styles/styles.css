@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;300;400;700&family=Noto+Serif+Display:wght@100;300;400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans Display', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+/* Utilities */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Start Contact Banner */
+.contact-banner {
+  background-color: hsla(168, 100%, 25%, 1);
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+/* End Contact Banner */
