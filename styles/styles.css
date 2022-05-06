@@ -47,9 +47,7 @@ body {
 }
 
 .nav-icon {
-  padding: 1rem;
   font-size: 1.5rem;
-  /* display: none; */
 }
 
 .nav-menu {
@@ -196,7 +194,7 @@ body {
   width: 100vw;
 }
 
-.hero-image {
+.hero-image-mobile {
   display: block;
   width: 100%;
 }
@@ -214,7 +212,8 @@ body {
   position: relative;
   top: 1em;
   left: 1em;
-  font-size: 4em;
+  font-size: 2.25em;
+  line-height: 1.5em;
   font-family: 'Noto Serif Display', sans-serif;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
