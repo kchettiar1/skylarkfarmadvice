@@ -27,9 +27,6 @@ body {
   padding: 0.5rem 0;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   border-bottom: 2px solid #fff;
 }
 /* Contact Banner Ends Here */
