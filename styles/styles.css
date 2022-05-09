@@ -40,14 +40,17 @@ body {
 
 /* Header Starts Here */
 .navbar-wrapper {
-  padding: 0.5rem;
-  padding-inline-start: 1rem;
+  /* padding: 0.5rem;
+  */
 }
 .navbar {
   justify-content: space-between;
+  margin-block-end: 1rem;
+ 
 }
 .logo {
   width: 150px;
+  padding-inline-start: 1rem;
 }
 
 .nav-icon {
@@ -62,8 +65,10 @@ body {
 .nav-display {
   display: flex;
 }
+
 .nav-items li {
   padding-inline-end: 2rem;
+  
 }
 .nav-items li:hover {
   color: hsla(168, 100%, 25%, 1);
@@ -226,17 +231,29 @@ body {
 
 /* About Section Starts Here */
 .about-wrapper {
-  border: 1px solid red;;
+  border: 1px solid red;
+  color: #033959;
   margin-block-start: 1.875rem;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.about-wrapper h2 {
+  font-family: 'Noto Serif Display', sans-serif;
+  font-size: 2.375rem;
+  margin-block-end: 1.875rem;
 }
 
 .about-wrapper p {
-  padding-block-start: 0.5rem;
+  padding-block-start: 1rem;
   font-size: 1.25em;
   line-height: 2rem;
 }
 
+.text-highlight {
+  font-weight: 700;
+  font-size: 1.875rem;
+  color: #007E65;
+}
 .hero-headline {
   position: inline;
   left: 2rem;
@@ -249,9 +266,11 @@ body {
   background-color: #008066;
   border: 1px solid blue;;
   margin-block-start: 1.875rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 .services-wrapper h2 {
+  font-family: 'Noto Serif Display', sans-serif;
+  font-size: 2.375rem;
   margin-block-end: 1.875rem;
   color: #fff;
 }
@@ -266,10 +285,11 @@ body {
 .services-card h3 {
   padding-block-start: 1.875rem;
   padding-block-end: 1rem;
+  text-align: center;
 }
 
 .services-card p {
-  padding-block-start: 0.5rem;
+  padding-block-start: 1rem;
   font-size: 1.25em;
   line-height: 2rem;
 }
