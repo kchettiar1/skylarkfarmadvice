@@ -226,7 +226,15 @@ body {
 
 /* About Section Starts Here */
 .about-wrapper {
-  background-color: #008066;
+  border: 1px solid red;;
+  margin-block-start: 1.875rem;
+  padding: 1rem;
+}
+
+.about-wrapper p {
+  padding-block-start: 0.5rem;
+  font-size: 1.25em;
+  line-height: 2rem;
 }
 
 .hero-headline {
@@ -238,8 +246,32 @@ body {
 
 /* Services Section Starts Here */
 .services-wrapper {
-  background-color: #0b4b78;
-  height: 200px;
+  background-color: #008066;
+  border: 1px solid blue;;
+  margin-block-start: 1.875rem;
+  padding: 1rem;
+}
+.services-wrapper h2 {
+  margin-block-end: 1.875rem;
+  color: #fff;
+}
+
+.services-card {
+  padding: 1rem;
+  margin-block-end: 1.875rem;
+  background: rgba(255, 255, 255, 0.15);
+  color:hsl(0, 0%, 100%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.services-card h3 {
+  padding-block-start: 1.875rem;
+  padding-block-end: 1rem;
+}
+
+.services-card p {
+  padding-block-start: 0.5rem;
+  font-size: 1.25em;
+  line-height: 2rem;
 }
 /* Services Section Ends Here */
 
