@@ -39,12 +39,10 @@ body {
 /* Contact Banner Ends Here */
 
 /* Header Starts Here */
-.navbar-wrapper {
-  /* padding: 0.5rem;
-  */
-}
+
 .navbar {
   justify-content: space-between;
+  margin-block-start: 1rem;
   margin-block-end: 1rem;
  
 }
@@ -68,12 +66,15 @@ body {
 
 .nav-items li {
   padding-inline-end: 2rem;
-  
 }
 .nav-items li:hover {
   color: hsla(168, 100%, 25%, 1);
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.nav-items a {
+ 
 }
 
 .menu-btn {
@@ -145,7 +146,7 @@ body {
     }
 
     100% {
-      height: 22rem;
+      height: 12rem;
       display: none;
     }
   }
@@ -158,7 +159,7 @@ body {
   @keyframes navCollapse {
     0% {
       display: initial;
-      height: 22rem;
+      height: 12rem;
     }
 
     100% {
@@ -174,7 +175,12 @@ body {
   .nav-items li {
     justify-content: flex-start;
     border-bottom: 1px black solid;
-    margin-bottom: 5px;
+    margin-block-start: 1.375rem;
+    margin-inline-start: 0.5rem;
+    font-family: "Noto Sans Display", sans-serif;
+    font-size: 1.375rem;
+    line-height: 2rem;
+    color: #033959;
   }
   .nav-items li:hover {
     transform: scale(1);
