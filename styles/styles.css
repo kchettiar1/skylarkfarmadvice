@@ -73,10 +73,6 @@ body {
   transform: scale(1.05);
 }
 
-.nav-items a {
- 
-}
-
 .menu-btn {
   cursor: pointer;
   position: absolute;
@@ -347,3 +343,10 @@ body {
   padding-right: 1rem;
 }
 /* Footer Ends Here */
+
+
+/* Zero_height */
+.zero-height {
+  height: 0;
+  display: none;
+}

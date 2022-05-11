@@ -20,6 +20,7 @@ menuBtn.addEventListener('click', () => {
   if (!navOpen) {
     navItems.classList.remove('collapse');
     navItems.classList.add('expand');
+    navItems.classList.remove('zero-height');
     navOpen = true;
   } else {
     navItems.classList.remove('expand');
@@ -27,6 +28,19 @@ menuBtn.addEventListener('click', () => {
     navOpen = false;
   }
 })
+
+// Nav Menu Item Close Animation
+const navLink = document.querySelectorAll('.nav-link')
+
+for (var i = 0; i < navLink.length; ++i) {
+  navLink[i].addEventListener('click', () => {
+    navItems.classList.remove('expand');
+    navItems.classList.add('zero-height');
+    navOpen = false;
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+  )};
 
 // FOOTER
 // Footer year date automation
