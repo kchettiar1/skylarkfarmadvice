@@ -49,6 +49,7 @@ ul {
 ul.typographic {
   list-style: initial;
   padding-inline-start: 20px;
+  margin: 0;
 }
 
 .sr-only {
