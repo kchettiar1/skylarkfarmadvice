@@ -233,7 +233,6 @@ body {
 
 /* About Section Starts Here */
 .about-wrapper {
-  border: 1px solid red;
   color: #033959;
   margin-block-start: 1.875rem;
   padding: 2rem;
@@ -266,34 +265,77 @@ body {
 /* Services Section Starts Here */
 .services-wrapper {
   background-color: #008066;
-  border: 1px solid blue;;
-  margin-block-start: 1.875rem;
   padding: 2rem;
 }
 .services-wrapper h2 {
   font-family: 'Noto Serif Display', sans-serif;
   font-size: 2.375rem;
+  font-weight: 400;
   margin-block-end: 1.875rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 .services-card {
   padding: 1rem;
   margin-block-end: 1.875rem;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.1);
   color:hsl(0, 0%, 100%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .services-card h3 {
-  padding-block-start: 1.875rem;
+  font-size: 1.25rem;
+  font-weight: 400;
   padding-block-end: 1rem;
   text-align: center;
+  letter-spacing: 0.08em;
 }
 
 .services-card p {
-  padding-block-start: 1rem;
   font-size: 1.25em;
   line-height: 2rem;
+}
+
+/* Stewardship */
+.stewardship-options {
+  margin-block-start: 1rem;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.stewardship-description {
+  display: none;
+}
+
+.stewardship-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stewardship-options h4 {
+  font-size: 1.125em;
+  
+  margin-block-start: 0.3125em;
+  margin-block-end: 0.3125em;
+}
+
+.stewardship-heading {
+  font-weight: 400;
+  font-family: 'Noto Serif Display', serif;
+}
+
+.stewardship-btn {
+  padding: 0.25em;
+  font-weight: 700;
+}
+
+.stewardship-options p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+  color: #fff;
 }
 /* Services Section Ends Here */
 
@@ -345,7 +387,7 @@ body {
 /* Footer Ends Here */
 
 
-/* Zero_height */
+/* Zero_height for Nav Bar Anchor Links */
 .zero-height {
   height: 0;
   display: none;
