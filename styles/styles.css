@@ -346,6 +346,7 @@ body {
 .stewardship-btn {
   padding: 0.25em;
   font-weight: 700;
+  visibility: hidden;
 }
 
 .stewardship-options p {
