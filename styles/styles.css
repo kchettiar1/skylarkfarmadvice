@@ -235,6 +235,9 @@ body {
 
 
 @media (min-width: 769px) {
+  .hero-overlay {
+    background: none;
+  }
   .hero-image-desktop  {
     display: initial;
   }
