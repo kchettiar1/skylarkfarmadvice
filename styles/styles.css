@@ -210,6 +210,10 @@ body {
   width: 100%;
 }
 
+.hero-image-desktop {
+  display: none;
+}
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -229,6 +233,15 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
+
+@media (min-width: 769px) {
+  .hero-image-desktop  {
+    display: initial;
+  }
+  .hero-image-mobile {
+    display: none;
+  }
+}
 /* Hero Section End Here */
 
 /* About Section Starts Here */
@@ -299,19 +312,26 @@ body {
   color: #fff;
 }
 
-.services-description {
-  /* font-size: 1rem;
-  line-height: 1.25rem;
-  font-weight: 300;
-  margin-block-start: 0.5em;
-  margin-block-end: 1em;
-  color: #fff; */
-}
-
 .services-card ul {
   list-style: disc;
   padding-left: 1rem;
   font-weight: 300;
+}
+
+
+@media (min-width: 768px) {
+  .services-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .section-title  {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .services-card {
+     width: 20vw;
+  }
 }
 
 /* Stewardship */
@@ -371,7 +391,7 @@ body {
 
 .social-links {
   flex-direction: column;
-  background-color: #141517;
+  background-color: #0C3139;
   color: #fff;
   font-size: 0.75rem; 
   padding-block-end: 1rem;
@@ -383,13 +403,13 @@ body {
 }
 
 .fa-brands {
-  font-size: 1rem;
+  font-size: 1.125rem;
   padding: 0.6rem;
 }
 .fa-brands:hover {
-  font-size: 1rem;
-  transform: scale(1.2);
-  color: var(--homeBkgdCl);
+  font-size: 1.125rem;
+  transform: scale(1.25);
+  color: #008066;
 }
 
 .copyright {
