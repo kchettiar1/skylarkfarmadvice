@@ -302,7 +302,7 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-.stewardship-description {
+.stewardship-description.openDescription{
   display: none;
 }
 

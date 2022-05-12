@@ -29,8 +29,8 @@ menuBtn.addEventListener('click', () => {
   }
 })
 
-// Nav Menu Item Close Animation
-const navLink = document.querySelectorAll('.nav-link')
+// Nav Menu Anchor Items Close Functionality
+const navLink = document.querySelectorAll('.nav-link');
 
 for (var i = 0; i < navLink.length; ++i) {
   navLink[i].addEventListener('click', () => {
@@ -41,6 +41,21 @@ for (var i = 0; i < navLink.length; ++i) {
     menuOpen = false;
   }
   )};
+
+
+  // Services Expand/Collapse
+const stewardshipDescription = document.querySelectorAll('.stewardship-description');
+console.log(stewardshipDescription);
+
+  const stewardshipLink = document.querySelectorAll('.stewardship-link');
+  console.log(stewardshipLink);
+
+for (var i = 0; i < stewardshipLink.length; ++i) {
+  stewardshipLink[i].addEventListener('click', () => {
+    stewardshipDescription.classList.toggle('openDescription');
+  }
+  )};
+
 
 // FOOTER
 // Footer year date automation
