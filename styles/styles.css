@@ -291,8 +291,27 @@ body {
 }
 
 .services-card p {
-  font-size: 1.25em;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+  color: #fff;
+}
+
+.services-description {
+  /* font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+  color: #fff; */
+}
+
+.services-card ul {
+  list-style: disc;
+  padding-left: 1rem;
+  font-weight: 300;
 }
 
 /* Stewardship */
