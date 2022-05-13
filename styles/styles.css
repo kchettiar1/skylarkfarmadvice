@@ -7,11 +7,8 @@
 } 
 
 
-html {
-  background-color: hsl(0, 0%, 100%);
-}
-
 body {
+  background-color: hsl(0, 0%, 100%);
   font-family: 'Noto Sans Display', sans-serif;
 }
 
@@ -126,7 +123,6 @@ body {
 
   .nav-items {
     width: 100vw;
-    background: var(navBkgdCl);
     height: 0;
   }
   .nav-items.expand {
@@ -190,6 +186,10 @@ body {
 }
 
 @media (min-width: 769px) {
+  .navbar {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
   .nav-items {
     display: initial;
   }
@@ -238,6 +238,9 @@ body {
   .hero-overlay {
     background: none;
   }
+  .hero-title {
+    font-size: 4.25em;
+  }
   .hero-image-desktop  {
     display: initial;
   }
@@ -250,14 +253,12 @@ body {
 /* About Section Starts Here */
 .about-wrapper {
   color: #033959;
-  margin-block-start: 1.875rem;
   padding: 2rem;
 }
 
 .about-wrapper h2 {
   font-family: 'Noto Serif Display', sans-serif;
   font-size: 2.375rem;
-  margin-block-end: 1.875rem;
 }
 
 .about-wrapper p {
@@ -275,6 +276,12 @@ body {
   position: inline;
   left: 2rem;
   top: 4rem;
+}
+
+@media (min-width: 769px) {
+  .about-wrapper {
+    padding: 5rem;
+  }
 }
 /* About Section Ends Here */
 
@@ -306,6 +313,10 @@ body {
   letter-spacing: 0.08em;
 }
 
+.services-img-desktop {
+  display:none;
+}
+
 .services-card p {
   font-size: 1rem;
   line-height: 1.25rem;
@@ -325,23 +336,31 @@ body {
 @media (min-width: 768px) {
   .services-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
   }
-
+  .services-img-mobile {
+    display: none;
+  }
+  .services-img-desktop {
+    display: initial;
+  }
   .section-title  {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 3;
   }
   .services-card {
-     width: 20vw;
+     width: 40vw;
+     justify-self: stretch;
+     align-self: center;
   }
 }
 
 /* Stewardship */
 .stewardship-options {
   margin-block-start: 1rem;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  /* border-top: 1px solid #fff; */
+  /* border-bottom: 1px solid #fff; */
 }
 
 .stewardship-description.openDescription{
@@ -418,6 +437,34 @@ body {
 .copyright {
   flex-direction: column;
   align-self: center;
+}
+
+
+@media (min-width: 768px) {
+  .social-links{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
+
+  .fa-brands {
+    font-size: 1.125rem;
+    padding: 0;
+  }
+  .fa-brands:hover {
+    font-size: 1.125rem;
+    transform: scale(1.25);
+    color: #008066;
+  }
+
+  .copyright {
+    flex-direction: row;
+  }
+  .copyright p {
+    padding: 0 0.625rem;
+    font-size: 1rem;
+  }
 }
 /* Footer Ends Here */
 
