@@ -196,6 +196,14 @@ body {
   .menu-btn {
     display: none;
   }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: initial;
+  }
 }
 /* Header Ends Here */
 
@@ -339,20 +347,37 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 5rem;
   }
-  .services-img-mobile {
+  /* .services-img-mobile {
     display: none;
   }
   .services-img-desktop {
     display: initial;
-  }
+  } */
   .section-title  {
     grid-column-start: 1;
     grid-column-end: 3;
   }
   .services-card {
-     width: 40vw;
-     justify-self: stretch;
-     align-self: center;
+    width: 40vw;
+     /* justify-self: stretch;  */
+     /* align-self: center; */
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto 1fr auto;
+     /* background: #033959; */
+  }
+
+  .services-card-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .services-card-img {
+    /* padding: 1em; */
+
+  }
+  .services-card-content .stewardship-options h4 {
+    margin-block-start: 0;
   }
 }
 
@@ -446,6 +471,7 @@ body {
     justify-content: space-between;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
+    padding-block-end: 0;
   }
 
   .fa-brands {
