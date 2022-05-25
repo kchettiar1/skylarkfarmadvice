@@ -12,6 +12,11 @@ body {
   font-family: 'Noto Sans Display', sans-serif;
 }
 
+.page-wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* Utilities */
 .flex-center {
   display: flex;
@@ -357,24 +362,24 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 5rem;
   }
+  
   /* .services-img-mobile {
     display: none;
   }
   .services-img-desktop {
     display: initial;
   } */
+
   .section-title  {
     grid-column-start: 1;
     grid-column-end: 3;
   }
   .services-card {
-    width: 40vw;
-     /* justify-self: stretch;  */
-     /* align-self: center; */
+    width: 95%;
+     justify-self: center; 
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: auto 1fr auto;
-     /* background: #033959; */
   }
 
   .services-card-title {
