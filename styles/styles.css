@@ -10,6 +10,8 @@
 body {
   background-color: hsl(0, 0%, 100%);
   font-family: 'Noto Sans Display', sans-serif;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .page-wrapper{
@@ -31,14 +33,37 @@ body {
 /* Contact Banner Starts Here */
 .contact-banner {
   flex-direction: column;
-  background-color: hsla(168, 100%, 25%, 1);
+  background: hsla(168, 100%, 25%, 1);
   color: hsl(0, 0%, 100%);
   padding: 0.5rem 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.125rem;
-  border-bottom: 2px solid #fff;
-  /* position: sticky;
-  top: 0; */
+}
+
+.contact-wrapper h1 {
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-inline-end: 1em;
+}
+
+.contact-wrapper h1:nth-child(2) {
+  padding-inline-end: 0;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+/* Responsive - Mobile < 350px */
+@media screen and (max-width: 349px) {
+  .contact-wrapper h1 {
+    font-size: 1.125em;
+  }
+}
+
+/* Responsive Tablet > 768px */
+@media screen and (min-width: 769px) {
+  .contact-wrapper h1 {
+    font-size: 1.5em;
+  }
 }
 /* Contact Banner Ends Here */
 
@@ -220,6 +245,31 @@ body {
     display: initial;
   }
 }
+
+/* Header --> Contact BTN */
+.contact-btn {
+  padding: 0.125em 0.125em;
+  border: 1px solid grey;
+  border-radius: 15px;
+  text-align: center;
+  margin: 1em 5em;
+  background-color: hsla(191, 65%, 14%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  color: hsla(168, 100%, 25%, 1);
+  background: hsla(0, 0%, 100%, 1);
+}
+
+.contact-btn.hidden {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
 /* Header Ends Here */
 
 /* Hero Section Starts Here */
@@ -362,7 +412,7 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 5rem;
   }
-  
+
   /* .services-img-mobile {
     display: none;
   }
@@ -377,6 +427,7 @@ body {
   .services-card {
     width: 95%;
      justify-self: center; 
+     align-self: flex-start;
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: auto 1fr auto;
@@ -397,23 +448,23 @@ body {
 }
 
 /* Stewardship */
-.stewardship-options {
+.services-options {
   margin-block-start: 1rem;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
 
-.stewardship-description.openDescription{
+.services-description.openDescription{
   display: none;
 }
 
-.stewardship-title {
+.services-subtitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.stewardship-options h4 {
+.services-options h4 {
   font-size: 1.125em;
   
   margin-block-start: 0.3125em;
@@ -425,13 +476,13 @@ body {
   font-family: 'Noto Serif Display', serif;
 }
 
-.stewardship-btn {
+.services-btn {
   padding: 0.25em;
   font-weight: 700;
   /* visibility: hidden; */
 }
 
-.stewardship-options p {
+.services-options p {
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 300;
@@ -465,11 +516,11 @@ body {
   margin: 0;
 }
 
-.fa-brands {
+.icon {
   font-size: 1.125rem;
   padding: 0.6rem;
 }
-.fa-brands:hover {
+.icon:hover {
   font-size: 1.125rem;
   transform: scale(1.25);
   color: #008066;
@@ -490,15 +541,16 @@ body {
     padding-block-end: 0;
   }
 
-  .fa-brands {
+  .icon {
     font-size: 1.125rem;
     padding: 0;
   }
-  .fa-brands:hover {
+  .icon:hover {
     font-size: 1.125rem;
     transform: scale(1.25);
     color: #008066;
   }
+
 
   .copyright {
     flex-direction: row;
