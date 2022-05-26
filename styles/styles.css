@@ -65,212 +65,6 @@ body {
     font-size: 1.5em;
   }
 }
-/* Contact Banner Ends Here */
-
-/* Header Starts Here */
-
-/* .navbar {
-  justify-content: space-between;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
- 
-}
-.logo {
-  width: 200px;
-  padding-inline-start: 1rem;
-}
-
-.nav-icon {
-  font-size: 1.5rem;
-}
-
-.nav-menu {
-  display: none;
-  padding-inline-end: 1rem;
-}
-
-.nav-display {
-  display: flex;
-}
-
-.nav-items li {
-  padding-inline-end: 2rem;
-}
-.nav-items li:hover {
-  color: hsla(168, 100%, 25%, 1);
-  cursor: pointer;
-  transform: scale(1.05);
-}
-
-.menu-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 75px;
-  right: 15px;
-  width: 50px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  transition: all 1s ease-in-out;
-}
-
-.menuIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2px;
-  width: 24px;
-  background: #000;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-  margin-bottom: 5px;
-} */
-
-/* Menu Button Animation */
-/* .menu-btn.open .line2 {
-  transform: translateX(-40px);
-  background: transparent;
-  box-shadow: none;
-}
-
-.menu-btn.open .line1 {
-  position: absolute;
-  transform: rotate(45deg) rotate(360deg);
-}
-
-.menu-btn.open .line3 {
-  position: absolute;
-  transform: rotate(-45deg) rotate(360deg);
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100vw;
-  }
-
-  .nav-items {
-    width: 100vw;
-    height: 0;
-  }
-  .nav-items.expand {
-    animation: navExpand 1250ms;
-    animation-fill-mode: forwards;
-    transition: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  }
-
-  @keyframes navExpand {
-    0% {
-      height: 0;
-      display: initial;
-    }
-
-    100% {
-      height: 12rem;
-      display: none;
-    }
-  }
-
-  .nav-items.collapse {
-    animation: navCollapse 1250ms;
-    transition: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  }
-
-  @keyframes navCollapse {
-    0% {
-      display: initial;
-      height: 12rem;
-    }
-
-    100% {
-      height: 0;
-      display: none;
-    }
-  }
-
-  .nav-items ul {
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  .nav-items li {
-    justify-content: flex-start;
-    border-bottom: 1px black solid;
-    margin-block-start: 1.375rem;
-    margin-inline-start: 0.5rem;
-    font-family: "Noto Sans Display", sans-serif;
-    font-size: 1.375rem;
-    line-height: 2rem;
-    color: #033959;
-  }
-  .nav-items li:hover {
-    transform: scale(1);
-  }
-  .nav-items a {
-    display: block;
-  }
-  .menu-toggle {
-    right: 10px;
-  }
-}
-
-@media (min-width: 769px) {
-  .navbar {
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
-  }
-
-  .logo {
-    width: 200px;
-  }
-
-  .nav-items {
-    display: initial;
-  }
-  .nav-items li {
-    font-size: 1.25em;
-  }
-  .menu-btn {
-    display: none;
-  }
-
-  .nav-mobile {
-    display: none;
-  }
-
-  .nav-desktop {
-    display: initial;
-  }
-} */
-
-/* Header --> Contact BTN */
-/* .contact-btn {
-  padding: 0.125em 0.125em;
-  border: 1px solid grey;
-  border-radius: 15px;
-  text-align: center;
-  margin: 1em 5em;
-  background-color: hsla(191, 65%, 14%, 1);
-  color: hsla(0, 0%, 100%, 1);
-  cursor: pointer;
-}
-
-.contact-btn:hover {
-  color: hsla(168, 100%, 25%, 1);
-  background: hsla(0, 0%, 100%, 1);
-}
-
-.contact-btn.hidden {
-  display: none;
-}
-
-.desktop {
-  display: none;
-} */
-
 
 /* NAVBAR Starts Here */
 .navbar {
@@ -557,6 +351,7 @@ body {
   color:hsl(0, 0%, 100%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .services-card h3 {
   font-size: 1.25rem;
   font-weight: 400;
@@ -569,7 +364,7 @@ body {
   display:none;
 }
 
-.services-card p {
+.services-description p {
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 300;
@@ -622,9 +417,6 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-.services-description.openDescription{
-  display: none;
-}
 
 .services-subtitle {
   display: flex;
