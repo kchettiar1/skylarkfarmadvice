@@ -426,14 +426,8 @@ body {
 
 .services-options h4 {
   font-size: 1.125em;
-  
   margin-block-start: 0.3125em;
   margin-block-end: 0.3125em;
-}
-
-.stewardship-heading {
-  font-weight: 400;
-  font-family: 'Noto Serif Display', serif;
 }
 
 .services-btn {
@@ -441,14 +435,13 @@ body {
   font-weight: 700;
 }
 
-.services-options p {
+.services-description {
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 300;
   margin-block-start: 0.5em;
   margin-block-end: 1em;
   color: #fff;
-  display: none;
 }
 /* Services Section Ends Here */
 
