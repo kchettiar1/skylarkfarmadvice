@@ -69,7 +69,7 @@ body {
 
 /* Header Starts Here */
 
-.navbar {
+/* .navbar {
   justify-content: space-between;
   margin-block-start: 1rem;
   margin-block-end: 1rem;
@@ -127,10 +127,10 @@ body {
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.5s ease-in-out;
   margin-bottom: 5px;
-}
+} */
 
 /* Menu Button Animation */
-.menu-btn.open .line2 {
+/* .menu-btn.open .line2 {
   transform: translateX(-40px);
   background: transparent;
   box-shadow: none;
@@ -225,8 +225,8 @@ body {
 
   .logo {
     width: 200px;
-    /* padding-inline-start: 1rem; */
   }
+
   .nav-items {
     display: initial;
   }
@@ -244,9 +244,74 @@ body {
   .nav-desktop {
     display: initial;
   }
-}
+} */
 
 /* Header --> Contact BTN */
+/* .contact-btn {
+  padding: 0.125em 0.125em;
+  border: 1px solid grey;
+  border-radius: 15px;
+  text-align: center;
+  margin: 1em 5em;
+  background-color: hsla(191, 65%, 14%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  color: hsla(168, 100%, 25%, 1);
+  background: hsla(0, 0%, 100%, 1);
+}
+
+.contact-btn.hidden {
+  display: none;
+}
+
+.desktop {
+  display: none;
+} */
+
+
+/* NAVBAR Starts Here */
+.navbar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, auto);
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: white;
+}
+
+.nav-logo {
+  align-self: center;
+  background: white;
+}
+
+.menu-btn {
+  justify-self: end;
+  background-color: white;
+}
+
+.menu-list {
+  grid-column: 1 / span 2;
+}
+
+.contact-btn {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.menu-list.hidden {
+  display: none;
+}
+
+.menu-list.mobile li {
+  padding: 0.5em 0.5em;
+  font-size: 1.25em;
+  border-bottom: 0.5px solid grey;
+}
+
 .contact-btn {
   padding: 0.125em 0.125em;
   border: 1px solid grey;
@@ -270,6 +335,120 @@ body {
 .desktop {
   display: none;
 }
+
+/* RESPONSIVE Tablet/Desktop > 769px */
+@media screen and (min-width: 769px) {
+  .desktop {
+    display: initial;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .navbar {
+    grid-template-columns: 25% 50% 25%;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-list {
+    grid-column: 2 / 2;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .contact-btn-desktop {
+    grid-column: 3 / 3;
+    justify-self: center;
+    align-self: center;
+    padding: 0.75em 0.75em;
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-align: center;
+    background-color: hsla(191, 65%, 14%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  .contact-btn-desktop:hover {
+    color: hsla(168, 100%, 25%, 1);
+    background: hsla(0, 0%, 100%, 1);
+  }
+
+  .menu-list ul {
+    display: flex;
+  }
+  .menu-list ul li {
+    padding: 1em 1em;
+    font-size: 1.5em;
+  }
+  .menu-list ul li:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+.logo {
+  width: 12.5em;
+}
+
+.menu-btn {
+  align-self: center;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+/* Menu starts Here */
+
+.menu-items-wrapper {
+  background: --color-Dkgreen;
+  color: --color-White;
+  height: calc(100vh - 7.85em);
+}
+
+.menu-desktop {
+  display: none;
+}
+
+.menu-display {
+  padding: 1em 1em;
+}
+
+.menu-items {
+  padding-block-start: 1em;
+  padding-block-end: 5em;
+}
+
+.menu-items li {
+  padding: 0.5em 1em;
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  border-bottom: 0.1px solid --color-Grey-transparent;
+}
+
+.btn {
+  padding: 0.5em 0.5em;
+  border-radius: 15px;
+  box-shadow: 2px 2px --color-Black-transparent;
+  cursor: pointer;
+  background: --color-White;
+  color: --color-Dkgreen;
+  font-weight: 400;
+  font-size: 1.25em;
+  letter-spacing: 0.2em;
+  margin-block-end: 2.5em;
+}
+
+.btn:hover {
+  background: --color-LightGreen;
+  border: 2px solid --color-White;
+  color: --color-White;
+  transform: translateY(-2px);
+}
+
+
 /* Header Ends Here */
 
 /* Hero Section Starts Here */
@@ -413,12 +592,6 @@ body {
     padding: 5rem;
   }
 
-  /* .services-img-mobile {
-    display: none;
-  }
-  .services-img-desktop {
-    display: initial;
-  } */
 
   .section-title  {
     grid-column-start: 1;
@@ -438,16 +611,11 @@ body {
     grid-column-end: 2;
   }
 
-  .services-card-img {
-    /* padding: 1em; */
-
-  }
   .services-card-content .stewardship-options h4 {
     margin-block-start: 0;
   }
 }
 
-/* Stewardship */
 .services-options {
   margin-block-start: 1rem;
   border-top: 1px solid #fff;
@@ -479,7 +647,6 @@ body {
 .services-btn {
   padding: 0.25em;
   font-weight: 700;
-  /* visibility: hidden; */
 }
 
 .services-options p {

@@ -13,11 +13,6 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Normalise -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
   <!-- Genrics -->
   <link rel="stylesheet" href="/styles/generics.css">
 
@@ -44,38 +39,56 @@
 
     <!-- Header Starts Here -->
     <header>
-      <nav class="navbar-wrapper">
+      <!-- <nav class="navbar-wrapper"> -->
 
-        <div class="navbar flex-center">
+        <!-- <div class="navbar flex-center"> -->
 
-          <div> <a href="https://skylarkfarmadvice.co.uk/"><img src="/assets/logos/SkylarkFA Logo_grn.svg" alt="logo"
+          <!-- <div> <a href="https://skylarkfarmadvice.co.uk/"><img src="/assets/logos/SkylarkFA Logo_grn.svg" alt="logo"
                 class="logo"></a>
-          </div>
+          </div> -->
 
-          <!-- <div class="nav-icon"> -->
-          <!-- <i class="fa-solid fa-bars"></i> -->
-          <div class="menu-btn">
+          <!-- <div class="menu-btn">
             <div class="menuIcon line1"></div>
             <div class="menuIcon line2"></div>
             <div class="menuIcon line3"></div>
           </div>
-          <!-- </div> -->
 
           <div class="nav-items nav-mobile">
             <ul class="nav-display">
-              <!-- <li> <a href="#">Home</a> </li> -->
               <li> <a class="nav-link" href="#about">About</a> </li>
               <li> <a class="nav-link" href="#services">Services</a> </li>
-              <li> <a class="nav-link" href="#get-in-touch">Get in touch </a> </li>
+
             </ul>
+
+            <div class="contact-btn nav-desktop">
+              <a class="btn" href="mailto:amanda@skylarkfarmadvice.co.uk">Get in touch</a>
+            </div>
           </div>
 
           <div class="nav-items nav-destop">
             <ul class="nav-display">
-              <!-- <li> <a href="#">Home</a> </li> -->
               <li> <a class="nav-link" href="#about">About</a> </li>
               <li> <a class="nav-link" href="#services">Services</a> </li>
-              <li> <a class="nav-link" href="#get-in-touch">Get in touch </a> </li>
+            </ul>
+          </div> -->
+
+          <nav class="navbar">
+
+            <div class="nav-logo">
+              <a href="https://skylarkfarmadvice.co.uk/"><img src="/assets/logos/SkylarkFA Logo_grn.svg" alt="logo"
+                  class="logo"></a>
+            </div>
+
+          <!-- Mobile Menu -->
+          <div class="menu-btn">
+            <a> <i class="fa-solid fa-bars"></i></a>
+          </div>
+
+          <div class="menu-list hidden mobile">
+            <ul>
+              <!-- <li> <a href="/index.html">Home</a> </li> -->
+              <li> <a class="menu-link" href="/index.html#about">About</a> </li>
+              <li> <a class="menu-link" href="/index.html#services">Services</a> </li>
             </ul>
           </div>
 
@@ -83,7 +96,18 @@
             <a class="btn" href="mailto:amanda@skylarkfarmadvice.co.uk">Get in touch</a>
           </div>
 
-        </div>
+          <!-- Desktop Menu -->
+          <div class="menu-list desktop">
+            <ul>
+              <!-- <li> <a href="/index.html">Home</a> </li> -->
+              <li> <a class="menu-link-desktop" href="/index.html#about">About</a> </li>
+              <li> <a class="menu-link-desktop" href="/index.html#services">Services</a> </li>
+            </ul>
+          </div>
+
+          <div class="contact-btn-desktop desktop">
+            <a class="btn" href="mailto:amanda@skylarkfarmadvice.co.uk">Get in touch</a>
+          </div>
 
       </nav>
     </header>
