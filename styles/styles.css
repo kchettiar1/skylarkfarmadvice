@@ -531,13 +531,15 @@ body {
 }
 
 .policy-wrapper p {
-  padding-block-start: 0.25rem;
-  font-size: 1.25em;
-  line-height: 2rem;
+  padding-block-end: 0.75rem;
+  font-size: 1.125em;
+  line-height: 1.25rem;
 }
 
 .policy-wrapper ul {
-  list-style: disc;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  list-style: circle;
   padding-left: 1rem;
   font-weight: 300;
 }
